@@ -120,7 +120,7 @@ INNER JOIN Dim_Branches db
 ON fs.BranchKey = db.BranchKey
 GROUP BY db.Branch, db.City
 ORDER BY Profit DESC;
-
+```
 ---
 
 ### Customer Segmentation
@@ -133,7 +133,7 @@ FROM Fact_Sales fs
 INNER JOIN Dim_Customers dc
 ON fs.CustomerKey = dc.CustomerKey
 GROUP BY dc.CustomerType, dc.Gender;
-
+```
 ---
 
 ### Product Performance
@@ -146,12 +146,12 @@ INNER JOIN Dim_Products dp
 ON fs.ProductKey = dp.ProductKey
 GROUP BY dp.ProductLine
 ORDER BY Profit DESC;
-
+```
 ---
 
 ### Order Size Profitability
 
-```markdown
+```sql
 ### Order Size Profitability
 ```sql
 SELECT
@@ -160,12 +160,12 @@ SELECT
 FROM Fact_Sales fs
 GROUP BY fs.order_status
 ORDER BY Profit DESC;
-
+```
 ---
 
 ### Male - Female Member Segmentation
 
-```markdown
+```sql
 ### Female Member Segmentation
 ```sql
 SELECT
@@ -181,6 +181,7 @@ ON fs.CustomerKey = dc.CustomerKey
 WHERE dc.CustomerType = 'Member'
   AND dc.Gender = 'Female' OR dc.Gender = 'Male'
 GROUP BY dc.CustomerType, dc.Gender;
+```
 
 ## Business Recommendations
 
@@ -191,7 +192,6 @@ GROUP BY dc.CustomerType, dc.Gender;
 5. Improve rating experience → Enhance service quality to lift margins.  
 6. Replicate Naypyitaw’s model → Apply its operational practices across other branches.  
 
----
 
 ## Project Structure
 
@@ -207,6 +207,7 @@ Supermarket-Sales-Analytics/
 │   └── Analytical_Queries.sql
 ├── README.md
 └── .gitignore
+```
 
 ##  Support & Contact
 
