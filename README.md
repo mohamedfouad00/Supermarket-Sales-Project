@@ -1,4 +1,4 @@
-# Supermarket Sales & Performance Analytics
+# Supermarket Sales Analytics
 
 ![Status](https://img.shields.io/badge/Status-Completed-2E8B57?style=for-the-badge&logo=github&logoColor=white)
 ![Tools](https://img.shields.io/badge/Tools-Power%20BI%20%7C%20Excel-1D1D1D?style=for-the-badge&logo=microsoftpowerbi&logoColor=yellow)
@@ -13,295 +13,101 @@ A complete retail analytics solution designed to evaluate supermarket sales perf
 
 This project transforms transactional supermarket data into business intelligence insights that support revenue growth and operational optimization.
 
-### Business Problem
-
-The supermarket operates across multiple branches and product categories but lacks visibility into:
-
-- Which branches generate the highest profitability
-- Which customer segments create the most value
-- Which product categories drive revenue and profit
-- How customer satisfaction impacts financial performance
-- Which operational areas should be prioritized for improvement
-
-The goal was to build an end-to-end analytics solution that enables data-driven decision making.
-
----
-
-## Executive Summary
-
-### Financial Performance
-
-- **$322,966.75** Total Revenue
-- **$15,379.37** Total Profit
-- **4.76%** Net Profit Margin
-- **5,510** Transactions Analyzed
-- **6.97 / 10** Average Customer Rating
-
-### Key Findings
-
-- Large Orders generate **62% of total profit**
-- Food & Beverages is the highest profit-generating category
-- Female Members represent the highest-value customer segment
-- Branch C (Naypyitaw) leads profitability performance
-- Revenue distribution remains balanced across all branches
-
----
+- $322,966.75 Total Revenue  
+- $15,379.37 Total Profit  
+- 4.76% Net Profit Margin  
+- 5,510 Transactions Analyzed  
+- 6.97 / 10 Average Customer Rating  
 
 ## Navigation Pane
 
-- New to this project? → [Getting Started](#getting-started)
-- Looking for dashboards? → [Dashboards](#dashboards)
-- Interested in SQL analysis? → [SQL-Analysis](#sql-analysis)
-- Looking for insights? → [Key Insights](#key-insights)
-- Need contact details? → [Support & Contact](#support--contact)
+- New to this project? → [Getting Started](#getting-started)  
+- Want dashboards? → [Dashboards](#dashboards)  
+- Interested in SQL analysis? → [SQL Queries](#sql-queries)  
+- Looking for insights? → [Key Insights](#key-insights)  
+- Need resources? → [Reference Resources](#reference-resources)  
+- Contact me? → [Support & Contact](#support--contact)  
 
 ---
 
-# Dataset Overview
+## Key Insights
 
-The dataset contains transactional retail records including:
-
-### Sales Information
-
-- Invoice ID
-- Quantity Sold
-- Unit Price
-- Revenue
-- Cost of Goods Sold
-- Gross Income
-
-### Customer Information
-
-- Customer Type
-- Gender
-- Rating
-
-### Product Information
-
-- Product Line
-- Branch
-- City
-- Payment Method
-
-### Time Information
-
-- Date
-- Month
-- Day Name
-- Time
-
----
-
-# Data Preparation
-
-Data preparation was performed using SQL Server, Excel, and Power Query.
-
-### Cleaning & Transformation
-
-- Standardized product categories
-- Created customer segmentation attributes
-- Built order size classifications
-- Created rating bands
-- Built dimensional tables
-- Validated transactional consistency
-- Removed duplicate records
-- Created analytical KPIs
-
----
-
-# Data Model
-
-## Star Schema Design
-
-![Data Model](Dashboards/Model.png)
-
-### Fact Table
-
-**Fact_Sales**
-
-Contains:
-
-- Revenue
-- Quantity
-- Gross Income
-- Tax
-- Cost of Goods Sold
-
-### Dimension Tables
-
-#### Dim_Customers
-
-- Customer Type
-- Gender
-
-#### Dim_Products
-
-- Product Line
-
-#### Dim_Branches
-
-- Branch
-- City
-
-#### Dim_Date
-
-- Day
-- Month
-- Year
-
----
-
-# Project Architecture
-
-```text
-Raw Transaction Data
-        ↓
-Data Cleaning (SQL / Power Query)
-        ↓
-Star Schema Modeling
-        ↓
-SQL Analytics Layer
-        ↓
-Power BI Dashboards
-        ↓
-Business Insights & Recommendations
-```
-
----
-
-# Dashboards
-
-## 1. Executive Dashboard
-
-![Executive Dashboard](Dashboards/Main.png)
-
-Provides a high-level overview of:
-
-- Revenue
-- Profit
-- Margin
-- Customer Ratings
-- Branch Performance
-
-### Key Metrics
-
-- Total Revenue
-- Total Profit
-- Net Margin
-- Transaction Volume
-- Revenue by Branch
-
----
-
-## 2. Detailed Analytics Dashboard
-
-![Details Dashboard](Dashboards/Details.png)
-
-Provides detailed analysis of:
-
-- Product Performance
-- Customer Satisfaction
-- Sales Trends
-- Product Mix
-- Customer Segments
-
----
-
-## 3. Excel Dashboard
-
-![Excel Dashboard](Dashboards/Excel.png)
-
-Interactive Excel dashboard built using:
-
-- Power Query
-- Pivot Tables
-- Pivot Charts
-- Slicers
-
----
-
-# Key Insights
-
-## Branch Performance
-
+### Branch Performance
 | Branch | Profit |
-|----------|----------|
-| Branch C | $5,265 |
-| Branch A | $5,057 |
-| Branch B | $5,057 |
+|--------|--------|
+| Naypyitaw (C) | $5,265 |
+| Yangon (A)    | $5,057 |
+| Mandalay (B)  | $5,057 |
 
-### Insight
-
-Branch profitability is highly balanced, reducing dependence on a single location.
+Profitability is balanced across branches, with Naypyitaw slightly leading.
 
 ---
 
-## Product Performance
-
+### Product Performance
 | Product Line | Profit |
-|--------------|---------|
+|--------------|--------|
 | Food & Beverages | $2,674 |
-| Sports & Travel | $2,625 |
+| Sports & Travel  | $2,625 |
 | Electronic Accessories | $2,588 |
-| Fashion Accessories | $2,586 |
-| Home & Lifestyle | $2,565 |
-| Health & Beauty | $2,343 |
+| Fashion Accessories    | $2,586 |
+| Home & Lifestyle       | $2,565 |
+| Health & Beauty        | $2,343 |
 
-### Insight
-
-Food & Beverages serves as the primary revenue driver while Sports & Travel contributes strongly to profitability.
+Food & Beverages leads, but diversification reduces risk.
 
 ---
 
-## Customer Segments
+### Customer Segments
+- Members: $7,820 profit  
+- Normal Customers: $7,559 profit  
+- Female Customers: $7,994 profit  
+- Male Customers: $7,385 profit  
 
-### Top Performing Segment
-
-**Female Members**
-
-Characteristics:
-
-- Highest profitability
-- Strong repeat purchase behavior
-- Higher average basket size
-
-### Insight
-
-Loyalty members consistently outperform normal customers in revenue contribution.
+Female Members are the highest‑value segment.
 
 ---
 
-## Order Size Analysis
-
+### Order Size Analysis
 | Order Size | Profit Contribution |
-|------------|-------------------|
-| Large | 62% |
-| Medium | 27% |
-| Small | 11% |
+|------------|---------------------|
+| Large      | 62% |
+| Medium     | 27% |
+| Small      | 11% |
 
-### Insight
+Large orders dominate profitability.
 
-Large transactions represent the most significant profit opportunity.
+## Dashboards
+
+### 1. Executive Dashboard
+![Executive Dashboard](Dashboards/Main.png)  
+High‑level overview of revenue, profit, margin, ratings, and branch performance.
 
 ---
 
-# SQL Analysis
+### 2. Detailed Analytics Dashboard
+![Details Dashboard](Dashboards/Details.png)  
+Deep dive into product mix, customer segments, and sales trends.
 
-The project includes advanced SQL analytics covering:
+---
 
-### Core Queries
+### 3. Excel Dashboard
+![Excel Dashboard](Dashboards/Excel.png)  
+Interactive Excel dashboard with pivot tables, charts, and slicers.
 
-- Branch Profitability Analysis
-- Customer Segmentation
-- Product Performance Analysis
-- Payment Method Analysis
-- Customer Satisfaction Analytics
-- Order Size Profitability
-- Time-Based Sales Trends
-- Revenue Distribution Analysis
+---
 
-Example:
+### 4. Data Model
+![Data Model](Dashboards/Model.png)  
+Star Schema Design:  
+- Fact_Sales (Revenue, Quantity, Gross Income, Tax, COGS)  
+- Dim_Customers (Customer Type, Gender)  
+- Dim_Products (Product Line)  
+- Dim_Branches (Branch, City)  
+- Dim_Date (Day, Month, Year)  
 
+## SQL Queries
+
+### Branch Profitability
 ```sql
 SELECT
     db.Branch,
@@ -314,140 +120,117 @@ INNER JOIN Dim_Branches db
 ON fs.BranchKey = db.BranchKey
 GROUP BY db.Branch, db.City
 ORDER BY Profit DESC;
-```
-
-See the SQL folder for the complete analytical query collection.
 
 ---
 
-# Business Recommendations
-
-## Immediate Actions
-
-### 1. Increase Large Order Adoption
-
-Introduce:
-
-- Bundle Discounts
-- Multi-buy Promotions
-- Loyalty Multipliers
-
-Expected Outcome:
-
-- Increased basket size
-- Higher profitability
+### Customer Segmentation
+```sql
+SELECT
+    dc.CustomerType,
+    dc.Gender,
+    SUM(fs.[gross income]) AS Profit
+FROM Fact_Sales fs
+INNER JOIN Dim_Customers dc
+ON fs.CustomerKey = dc.CustomerKey
+GROUP BY dc.CustomerType, dc.Gender;
 
 ---
 
-### 2. Expand Loyalty Programs
-
-Target:
-
-- Female Customers
-- Frequent Buyers
-
-Expected Outcome:
-
-- Higher retention
-- Increased customer lifetime value
-
----
-
-### 3. Improve Customer Experience
-
-Focus Areas:
-
-- Checkout Efficiency
-- Peak Hour Staffing
-- Queue Management
-
-Expected Outcome:
-
-- Improved ratings
-- Higher repeat purchases
+### Product Performance
+```sql
+SELECT
+    dp.ProductLine,
+    SUM(fs.[gross income]) AS Profit
+FROM Fact_Sales fs
+INNER JOIN Dim_Products dp
+ON fs.ProductKey = dp.ProductKey
+GROUP BY dp.ProductLine
+ORDER BY Profit DESC;
 
 ---
 
-### 4. Replicate Best Branch Practices
+### Order Size Profitability
 
-Use Branch C as the operational benchmark for:
-
-- Store Layout
-- Product Placement
-- Workforce Allocation
-
----
-
-# Tech Stack
-
-| Component | Technology |
-|------------|------------|
-| Database | SQL Server |
-| Visualization | Power BI |
-| Spreadsheet Analytics | Excel |
-| Data Modeling | Star Schema |
-| Query Language | T-SQL |
-| ETL | Power Query |
+```markdown
+### Order Size Profitability
+```sql
+SELECT
+    fs.order_status,
+    SUM(fs.[gross income]) AS Profit
+FROM Fact_Sales fs
+GROUP BY fs.order_status
+ORDER BY Profit DESC;
 
 ---
 
-# Project Structure
+### Male - Female Member Segmentation
+
+```markdown
+### Female Member Segmentation
+```sql
+SELECT
+    dc.CustomerType,
+    dc.Gender,
+    COUNT(fs.[Invoice ID]) AS Orders,
+    SUM(fs.Total) AS Revenue,
+    SUM(fs.[gross income]) AS Profit,
+    ROUND(AVG(fs.[gross income]), 2) AS Avg_Profit_Per_Order
+FROM Fact_Sales fs
+INNER JOIN Dim_Customers dc
+ON fs.CustomerKey = dc.CustomerKey
+WHERE dc.CustomerType = 'Member'
+  AND dc.Gender = 'Female' OR dc.Gender = 'Male'
+GROUP BY dc.CustomerType, dc.Gender;
+
+## Business Recommendations
+
+1. Anchor strategy in large orders → Incentivize bulk purchases with bundle pricing.  
+2. Leverage loyalty programs → Expand member benefits to convert normal customers.  
+3. Target female customers → Tailor promotions and product placement.  
+4. Balance product line focus → Maintain diversification while letting Food & Beverages lead.  
+5. Improve rating experience → Enhance service quality to lift margins.  
+6. Replicate Naypyitaw’s model → Apply its operational practices across other branches.  
+
+---
+
+## Project Structure
 
 ```text
 Supermarket-Sales-Analytics/
-│
 ├── Dashboards/
 │   ├── Main.png
 │   ├── Details.png
 │   ├── Excel.png
 │   └── Model.png
-│
 ├── SQL/
 │   ├── Schema_Creation.sql
 │   └── Analytical_Queries.sql
-│
 ├── README.md
 └── .gitignore
-```
 
----
+##  Support & Contact
 
-# Getting Started
+**Project Author:** Mohamed Fouad  
+**Email:** m.fouad.business002@gmail.com  
+**LinkedIn:** <a href="https://linkedin.com/in/mohamed-fouad-88608424b" target="_blank">Mohamed Fouad</a>  
+**GitHub:** <a href="https://github.com/mohamedfouad00" target="_blank">@mohamedfouad00</a>
 
-## Prerequisites
+##  License
 
-- SQL Server 2019+
-- Power BI Desktop
-- Microsoft Excel
-- Git
+This project is provided as-is for educational and business analytical purposes.
 
-## Installation
+##  Contributing
 
-```bash
-git clone https://github.com/mohamedfouad00/Supermarket-Sales-Analytics.git
+Contributions are welcome! Please follow these steps:
 
-cd Supermarket-Sales-Analytics
-```
+1. Fork the repository
+2. Create a feature branch (`git checkout -b feature/amazing-feature`)
+3. Commit your changes (`git commit -m 'Add amazing feature'`)
+4. Push to the branch (`git push origin feature/amazing-feature`)
+5. Open a Pull Request
 
-Load database schema, import data, and refresh Power BI connections.
+## Reference Resources
 
----
-
-# Support & Contact
-
-**Mohamed Fouad**  
-**Data Analyst**
-
-Email: m.fouad.business002@gmail.com
-
-GitHub:
-:contentReference[oaicite:0]{index=0}
-
-LinkedIn:
-:contentReference[oaicite:1]{index=1}
-
----
-
-# License
-
-This project is provided for educational, analytical, and portfolio purposes.
+- <a href="https://app.powerbi.com/view?r=eyJrIjoiYjAwNTRkNTUtMmU0Ny00Y2JmLTgzYmYtNWQyYjRkYmNhZjIxIiwidCI6ImMzMGI1NDRmLWJhMTgtNGUyYy04YjllLTdmYWU5ZmU5NWUzYSJ9" target="_blank">Power BI Live Reports</a>  
+- <a href="https://en.wikipedia.org/wiki/Star_schema" target="_blank">Star Schema Design</a>  
+- <a href="https://drive.google.com/file/d/1zmV6ISU1w7JwGAL3n5hNAG8e5odfKMQG/view?usp=sharing" target="_blank">Marketing Campaign – Advanced Effectiveness, Sales & Customer Funnel Report</a>
