@@ -363,8 +363,7 @@ Supermarket-Sales-Analytics/
 - [Power BI Live Reports](https://app.powerbi.com)
 - [Star Schema Design — Wikipedia](https://en.wikipedia.org/wiki/Star_schema)
 - [Supermarket Sales — Advanced Performance & Insights Report](Report/Supermarket_Sales_Report.pdf)
-- [Kaggle: Supermarket Sales Dataset](https://www.kaggle.com/datasets/aungpyaeap/supermarket-sales)
-
+  
 ---
 
 ## Support & Contact
