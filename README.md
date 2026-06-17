@@ -370,7 +370,7 @@ Supermarket-Sales-Analytics/
 ## Support & Contact
 
 **Project Author:** Mohamed Fouad  
-**Role:** Commercial Data Analyst  
+**Role:** Data Analyst  
 **Email:** m.fouad.business002@gmail.com  
 **LinkedIn:** [Mohamed Fouad](https://linkedin.com/in/mohamed-fouad-88608424b)  
 **GitHub:** [@mohamedfouad00](https://github.com/mohamedfouad00)
