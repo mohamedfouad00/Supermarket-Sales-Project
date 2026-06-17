@@ -25,14 +25,13 @@ This project transforms transactional supermarket data into actionable business 
 
 ## Navigation Pane
 
-- **New to this project?** → [Getting Started](#-getting-started)
-- **Want dashboards?** → [Dashboards](#-dashboards)
-- **Interested in SQL analysis?** → [SQL Queries](#-sql-queries)
-- **Looking for insights?** → [Key Insights](#-key-insights)
-- **Need tech details?** → [Tech Stack](#-tech-stack)
-- **Looking for resources?** → [Reference Resources](#-reference-resources)
-- **Contact information?** → [Support & Contact](#-support--contact)
-
+- **New to this project?** → [1. Getting Started](#1-getting-started)
+- **Want dashboards?** → [2. Dashboards](#2-dashboards)
+- **Interested in SQL analysis?** → [3. SQL Queries](#3-sql-queries)
+- **Looking for insights?** → [4. Key Insights](#4-key-insights)
+- **Need tech details?** → [5. Tech Stack](#5-tech-stack)
+- **Looking for resources?** → [6. Reference Resources](#6-reference-resources)
+- **Contact information?** → [7. Support & Contact](#7-support--contact)
 ---
 
 ## Key Insights
