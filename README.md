@@ -362,7 +362,7 @@ Supermarket-Sales-Analytics/
 
 - [Power BI Live Reports](https://app.powerbi.com/view?r=eyJrIjoiODdjYzYxNGMtOTViOC00MWQ2LWEwNzEtYjVhMWM3MDA5ODRlIiwidCI6ImMzMGI1NDRmLWJhMTgtNGUyYy04YjllLTdmYWU5ZmU5NWUzYSJ9&pageName=c3ed6f6dacdab0471954)
 - [Star Schema Design — Wikipedia](https://en.wikipedia.org/wiki/Star_schema)
-- [Supermarket Sales — Advanced Performance & Insights Report]([Report/Supermarket_Sales_Report.pdf](https://drive.google.com/file/d/1DfddOosvzMVPrbmO4XtcJWq4SIm6XV3c/view?usp=sharing))
+- [Supermarket Sales — Advanced Performance & Insights Report]((https://drive.google.com/file/d/1DfddOosvzMVPrbmO4XtcJWq4SIm6XV3c/view?usp=sharing))
   
 ---
 
