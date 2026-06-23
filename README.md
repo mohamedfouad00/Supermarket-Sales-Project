@@ -360,7 +360,7 @@ Supermarket-Sales-Analytics/
 
 ## Reference Resources
 
-- [Power BI Live Reports](<iframe title="Super market sales dashboard" width="600" height="373.5" src="https://app.powerbi.com/view?r=eyJrIjoiODdjYzYxNGMtOTViOC00MWQ2LWEwNzEtYjVhMWM3MDA5ODRlIiwidCI6ImMzMGI1NDRmLWJhMTgtNGUyYy04YjllLTdmYWU5ZmU5NWUzYSJ9&pageName=c3ed6f6dacdab0471954" frameborder="0" allowFullScreen="true"></iframe>)
+[Power BI Live Reports](https://app.powerbi.com/view?r=eyJrIjoiODdjYzYxNGMtOTViOC00MWQ2LWEwNzEtYjVhMWM3MDA5ODRlIiwidCI6ImMzMGI1NDRmLWJhMTgtNGUyYy04YjllLTdmYWU5ZmU5NWUzYSJ9&pageName=c3ed6f6dacdab0471954)
 - [Star Schema Design — Wikipedia](https://en.wikipedia.org/wiki/Star_schema)
 - [Supermarket Sales — Advanced Performance & Insights Report](Report/Supermarket_Sales_Report.pdf)
   
